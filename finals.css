@@ -1,0 +1,267 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #0A192F;
+    color: #8892B0;
+    scroll-behavior: smooth;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 180px; /* More space between sections */
+    padding: 60px 20px; /* Increased padding for better spacing */
+}
+
+/* Heading Styling */
+h1, h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: #B2BEB5;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 24px;
+    font-size: 1em;
+    margin: 10px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: black;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: black;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+    padding: 60px 20px;
+}
+
+.about-text {
+    text-align: center;
+    flex: 1;
+    padding-right: 50px;
+}
+
+.about-image {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Education Section */
+.education-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #005F73;
+    margin-top: 30px;
+}
+
+.card {
+    width: 30%;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-top: 60px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 350px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Technologies Section */
+@keyframes scroll-tech {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.technologies {
+    margin-top: 80px;
+}
+
+.tech-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Increase space between items */
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent wrapping */
+    width: 100%;
+    padding: 20px;
+}
+
+.tech-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: inline-block;
+    width: 180px;
+    min-width: 10px;
+    margin: 20px;
+}
+
+.tech-scroll {
+    display: flex;
+    animation: scroll-tech 15s linear infinite; /* Adjust speed */
+}
+
+.tech-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tech-box p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/* Projects Section - Cards */
+.projects-section {
+    background-color: #f9f9f9;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-placeholder {
+    background-color: #eee;
+    height: 150px;
+}
+
+.text-content {
+    padding: 1rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
